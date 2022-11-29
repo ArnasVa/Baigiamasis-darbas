@@ -1,0 +1,164 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  background: linear-gradient(90deg, rgb(245, 156, 92) 30%, rgb(255, 113, 19) 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+#user-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+nav .nav-menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 20px;
+  align-items: center;
+  justify-items: center;
+}
+nav .nav-menu-list .menu-item-element {
+  list-style: none;
+}
+nav .nav-menu-list .menu-item-element a {
+  color: rgb(252, 104, 6);
+  font-weight: 550;
+  border-radius: 5px;
+  padding: 5px;
+  border: solid 1.5px rgb(255, 113, 19);
+}
+nav .nav-menu-list .menu-item-element a:hover {
+  border: none;
+  color: black;
+}
+nav form {
+  align-self: center;
+  justify-self: end;
+  margin-right: 50px;
+}
+
+#content-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  padding: 15px;
+}
+#content-wrapper #posts-list {
+  width: 80%;
+  margin-top: 20px;
+}
+#content-wrapper #posts-list .post-item {
+  padding: 8px;
+}
+#content-wrapper #posts-list .post-item .post-content .paragraph-content {
+  border: 1px solid black;
+  padding: 10px;
+}
+#content-wrapper #posts-list .post-item .comments-wrapper .comments-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#content-wrapper #posts-list .post-item .comments-wrapper .comments-list .comment-item {
+  border: 1px solid black;
+  padding-left: 10px;
+}
+#content-wrapper #posts-list .post-item .comments-wrapper .comments-list .comment-item .comment-author {
+  color: rgb(255, 115, 0);
+}
+#content-wrapper #posts-list .post-item .comments-wrapper .comments-list .comment-item .comment-content {
+  font-style: italic;
+}
+#content-wrapper .albums-list {
+  width: 100%;
+  margin-top: 30px;
+}
+#content-wrapper .albums-list .album-item {
+  justify-content: center;
+  padding-bottom: 50px;
+}
+#content-wrapper .albums-list .album-item .album-author {
+  padding-bottom: 12px;
+  font-style: italic;
+}
+
+#posts-wrapper {
+  margin-top: 100px;
+  padding: 15px;
+  display: grid;
+  justify-content: center;
+}
+#posts-wrapper .pagination-wrapper {
+  padding-bottom: 30px;
+}
+#posts-wrapper .list-element .list-item {
+  padding-bottom: 10px;
+}
+
+#users-wrapper {
+  margin-top: 100px;
+  padding: 15px;
+  display: grid;
+  justify-content: center;
+}
+#users-wrapper .page-title {
+  padding-left: 35px;
+}
+#users-wrapper .list-element .list-item {
+  padding-bottom: 10px;
+}
+
+#albums-wrapper {
+  margin-top: 30px;
+  padding: 20px;
+}
+#albums-wrapper .albums-container .page-title {
+  margin-bottom: 40px;
+}
+#albums-wrapper .albums-container .albums-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+#albums-wrapper .albums-container .albums-list .album-item {
+  justify-content: center;
+  align-content: center;
+}
+
+#post-wrapper {
+  padding-top: 40px;
+  width: 80%;
+}
+#post-wrapper .post-content .paragraph-content {
+  border: 1px solid black;
+  padding: 10px;
+}
+#post-wrapper .comments-wrapper {
+  padding-top: 35px;
+}
+#post-wrapper .comments-wrapper .comments-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#post-wrapper .comments-wrapper .comments-list .comment-item {
+  border: 1px solid black;
+  padding: 10px;
+}
+#post-wrapper .comments-wrapper .comments-list .comment-item .comment-author {
+  color: rgb(255, 115, 0);
+}
+#post-wrapper .comments-wrapper .comments-list .comment-item .comment-content {
+  font-style: italic;
+}
